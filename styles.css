@@ -1,0 +1,256 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fbfafa;
+}
+
+header {
+    background: url('./image/image.webp') no-repeat center center;
+    background-size: cover;
+    color: #f5f1f8;
+    padding: 50px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+nav {
+    text-align: right;
+    padding-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+}
+
+nav ul li a {
+    color: rgb(253, 252, 252);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #151414;
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid rgb(254, 254, 254);
+    margin: 20px auto;
+    display: block;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.about-me h2 {
+    font-size: 30px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.about-me {
+    font-size: 18px;
+    color: #333;
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+}
+.profile-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    background-color: #fff; /* Adjust the background color as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+    flex-basis: -10%; /* Adjust the size as needed */
+    background-image: url("./image/shambhu.jpg"); /* Replace with your image path */
+    background-size: cover; 
+    background-position: center;
+    border-radius: 8px; /* Optional, if you want rounded corners */
+}
+
+.about-text {
+    flex-basis: 60%; /* Adjust the size as needed */
+    padding-left: 2em; /* Spacing between image and text */
+}
+
+/* Add your own styles for the rest of the content */
+
+
+
+
+section {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*this is the contact information css section */
+.input-pair {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Adjust the gap between inputs as needed */
+    margin-bottom: 15px; /* Space between each pair */
+}
+
+.input-pair input {
+    flex: 1; /* Each input will take up half of the .input-pair width */
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contact-form {
+    max-width: 800px; /* Sets the max-width of the form for better control */
+    margin: 20px auto; /* Centers the form */
+    padding: 20px;
+    background: #ffffff; /* Change the color as needed */
+    border-radius: 8px; /* Optional: for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: for box shadow */
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="tel"],
+#contact-form input[type="text"],
+
+#contact-form textarea {
+    width: calc(100%-30%); /* Full width of the form container */
+    padding: 15px; /* Ample padding for inputs */
+    margin-bottom: 15px; /* Space between each field */
+    border: 1px solid #ccc; /* Subtle border style */
+    border-radius: 4px; /* Rounded corners for the inputs */
+}
+
+#contact-form button {
+    width: auto; /* Allows the button to fit the text */
+    padding: 10px 15px; /* Padding inside the button */
+    background-color: #007bff; /* Button color, change as needed */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners for the button */
+    cursor: pointer; /* Changes the cursor symbol on hover */
+    font-size: 16px; /* Sets the text size inside the button */
+}
+
+#contact-form button:hover {
+    background-color: #0056b3; /* Darkens the button when hovered over */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    #contact-form {
+        width: 90%; /* Allows some margin on small screens */
+        max-width: none; /* Overrides max-width on small screens */
+    }
+}
+
+#contact-info a {
+    display: block; /* Makes each link a block element to occupy its own line */
+    margin-bottom: 50px; /* Adds space below each link */
+    color: #007bff; /* Adjust the color as needed */
+    text-decoration: none; /* Removes underline from links */
+    transition: color 0.3s ease; /* Smooth color transition for hover */
+}
+
+#contact-info a:hover {
+    color: #0056b3; /* Darker blue on hover, adjust as needed */
+}
+
+#contact-info a i {
+    margin-right: 200px; /* Adds space between icon and text */
+}
+
+/* skills section*/
+#skills {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8; /* Adjust the background color as needed */
+}
+
+#skills h2 {
+    margin-bottom: 20px;
+}
+
+.skill-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.skill-column {
+    flex: 1; /* Each column takes up equal space */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333; /* Skill text color */
+    margin-bottom: 15px; /* Space between skills */
+}
+
+.skill img {
+    max-width: 80px; /* Adjust icon size as needed */
+    margin-bottom: 8px;
+}
+
+.skill span {
+    font-size: 14px; /* Skill label font size */
+}
+
+
+@media (max-width: 768px) {
+    .skill-columns {
+        flex-direction: column;
+    }
+    .skill-column {
+        width: 100%; /* Full width on small screens */
+    }
+}
